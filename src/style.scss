@@ -1,6 +1,27 @@
 body {
   font-family: "Roboto", sans-serif;
   color: rgb(10%, 10%, 10%);
-  background: darken(white, 10%);
   margin: 50px;
+  vertical-align: center;
+  font-size: 180px;
+}
+
+html {
+  background: url(http://www.resortcollection.com/wp-content/themes/resortcollection/property-images/summit/summit-beach-resort-panama-city-beach-fl-beach-01.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  display: block;
+  color: red;
+  position: absolute;
+  top: 50%;
 }

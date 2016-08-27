@@ -4,8 +4,10 @@ import React from 'react';
 // function based "dumb" component with no state
 const Welcome = () => {
   return (
-    <div>
-      react+react-router+webpack+babel+eslint starter
+    <div className="container">
+      <div className="text">
+        NO
+      </div>
     </div>
   );
 };
