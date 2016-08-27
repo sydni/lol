@@ -22,7 +22,7 @@ html {
 }
 
 .text {
-  display: block;
+  display: inline-block;
   color: red;
   position: absolute;
   top: 50%;
@@ -34,6 +34,7 @@ html {
   }
   .container {
     align-content: flex-start;
+    align-items: flex-start;
   }
 
 }
