@@ -1,21 +1,5 @@
 import React, { Component } from 'react';
-// import Calendar from 'react-input-calendar';
 // import { connect } from 'react-redux';
-
-
-// function based "dumb" component with no state
-// const Welcome = () => {
-//   return (
-//     <div className="container">
-//       <div className="text">
-//         NO
-//       </div>
-//     </div>
-//   );
-// };
-//
-//
-// export default Welcome;
 
 
 class Welcome extends Component {
@@ -29,7 +13,8 @@ class Welcome extends Component {
 
   yes() {
     const currentdate = new Date();
-    if (currentdate.getUTCMonth() === 7 && currentdate.getUTCDate() === 28) {
+    if ((currentdate.getUTCMonth() === 7 && currentdate.getUTCDate() === 28 && currentdate.getUTCHours() >= 4) ||
+    (currentdate.getUTCMonth() === 7 && currentdate.getUTCDate() === 29 && currentdate.getUTCHours() <= 4)) {
       return (
         <div className="container">
           <div className="text">
